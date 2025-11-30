@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Love_Ya_Like_A_Sister";
+    src: url(../fuentes/Love_Ya_Like_A_Sister/LoveYaLikeASister-Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, p, label {
+  font-family: "Love_Ya_Like_A_Sister", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color:red
+}
+
+body {
+  padding-top: 56px; /*ajustamos según la altura real del navbar*/
+}
+
+#inicio {
+    background-image: url("../media/imagen.jpg");
+    background-repeat: no-repeat; /*Para que la img de fondo no se repita */
+    background-size: cover; /*Para que cubra todo el fondo */
+    background-position: bottom center;
+    background-attachment: fixed; /*Para que se quede fija*/
+
+    width: 100%;
+    height: 100vh;
+}
+
+/*Para que el texto resalte sobre la imagen*/
+#inicio h1 {
+    background-color: rgba(0,0,0,0.3); /*Caja de fondo del h1*/
+    padding: 1rem 2rem; /*espacio dentro del rectángulo*/
+    border-radius: 10px; /*esquinas redondeadas*/
+    text-align: justify;
+}
+
+hr {
+    border: 0;
+    height: 4px;
+    background: linear-gradient(to right, #ffb6c1, #ffd700, #87cefa);
+    border-radius: 10px;
+    width: 70%;
+    margin: 2.5rem auto;
+}
+
+#presentacion h3 {
+    background-color: rgba(32, 178, 170, 0.4);/* Caja de fondo*/
+    padding: 1rem 2rem; /*espacio dentro del rectángulo*/
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+/* Cambios específicos para MD y LG */
+@media (min-width: 768px) { /* md */
+  #inicio h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) { /* lg */
+  #inicio h1 {
+    font-size: 4rem;
+  }
+}
+
+/*--IMAGENES BENEFICIOS-- */
+#beneficios img {
+    max-width: 50%;   /* tamaño en móviles */
+    height: auto;
+}
+
+/* En pantallas medianas */
+@media (min-width: 768px) {
+  #beneficios img {
+      max-width: 40%;
+  }
+}
+
+/* En pantallas grandes */
+@media (min-width: 1200px) {
+  #beneficios img {
+      max-width: 30%;
+  }
+}
+
+
+
+
